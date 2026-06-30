@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surman Code Hub | Corporate Portal</title>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <canvas id="bg-canvas"></canvas>
+
+    <div class="landing-container">
+        
+        <div class="brand-hero-section">
+            <div class="hero-tag">&lt; NEXT_GEN_PLATFORM &gt;</div>
+            <h1>SURMAN<br><span class="gradient-text">CODE HUB</span></h1>
+            <p class="hero-desc">
+                Building scalable digital pipelines, premium matrix architectures, and advanced secure node frameworks for global enterprises.
+            </p>
+            
+            <div class="ceo-badge">
+                <div class="ceo-avatar">VK</div>
+                <div class="ceo-info">
+                    <h4>Vishal Kumar</h4>
+                    <p>Founder & CEO | Lead Developer</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="auth-workspace">
+            <div class="main-wrapper">
+                
+                <div class="auth-card show-now" id="login-card">
+                    <div class="card-header">
+                        <h3>Account Login</h3>
+                        <p>Enter your node access credentials</p>
+                    </div>
+                    
+                    <form class="card-form" onsubmit="event.preventDefault();">
+                        <div class="input-box">
+                            <label>EMAIL ADDRESS</label>
+                            <input type="email" placeholder="vishal@surmancodehub.com" required>
+                        </div>
+                        <div class="input-box">
+                            <label>PASSWORD</label>
+                            <input type="password" placeholder="••••••••••••" required>
+                        </div>
+                        <button type="submit" class="submit-btn cyan-theme">INITIALIZE SESSION</button>
+                    </form>
+
+                    <div class="card-footer">
+                        <span>New to the hub?</span>
+                        <button onclick="changeForm('signup')">Create Account Here //</button>
+                    </div>
+                </div>
+
+                <div class="auth-card hide-now" id="signup-card">
+                    <div class="card-header">
+                        <h3 style="color: #c084fc;">Register Node</h3>
+                        <p>Initialize your developer access token</p>
+                    </div>
+                    
+                    <form class="card-form" onsubmit="event.preventDefault();">
+                        <div class="input-box">
+                            <label>FULL NAME</label>
+                            <input type="text" placeholder="Vishal Kumar" required>
+                        </div>
+                        <div class="input-box">
+                            <label>EMAIL ADDRESS</label>
+                            <input type="email" placeholder="name@domain.com" required>
+                        </div>
+                        <div class="input-box">
+                            <label>CREATE PASSWORD</label>
+                            <input type="password" placeholder="••••••••••••" required>
+                        </div>
+                        <button type="submit" class="submit-btn purple-theme">PROVISION ACCOUNT</button>
+                    </form>
+
+                    <div class="card-footer">
+                        <span>Already registered?</span>
+                        <button onclick="changeForm('login')">Login to Terminal //</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
